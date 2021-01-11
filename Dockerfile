@@ -6,7 +6,6 @@ RUN apt-get update \
     && apt-get -y --no-install-recommends install ca-certificates curl build-essential cmake libuv1-dev git openssl libssl-dev libhwloc-dev
 
 RUN git clone https://github.com/xmrig/xmrig.git \
-    && git -C xmrig apply ../donate-level.patch \
     && cd xmrig \
     && mkdir build \
     && cd build \
